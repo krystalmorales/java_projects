@@ -10,7 +10,7 @@ public class Exercise05 {
         cont[3] = "Asia";
         cont[4] = "Australia";
         // 2. Loop over each element and print it.
-        for(int i = 0; i < cont.length(); i++) {
+        for(int i = 0; i < cont.length; i++) {
         System.out.println(cont[i]);
         }
     }
