@@ -7,12 +7,12 @@ public class Exercise01 {
 
         // Call the getRandomCompliment method two more times.
         // 1. Store the result in a new string variable.
-        // 2. Print the result.
-        // 3. Print the value returned directly without an intermediate variable.
-
         String secondCompliment = getRandomCompliment();
+        String thirdCompliment = getRandomCompliment();
+        // 2. Print the result.
         System.out.println(secondCompliment);
-
+        System.out.println(thirdCompliment);
+        // 3. Print the value returned directly without an intermediate variable.
         System.out.println(getRandomCompliment());
     }
 
