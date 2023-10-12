@@ -7,7 +7,7 @@ public class Exercise13 {
 
         // 1. Count the towns.
         int townCount = 0;
-        for (int i = 0; i < statesOrTowns.length; i++) {
+        for (int i = 0; i < statesOrTowns.length(); i++) {
             if (statesOrTowns[i].length() > 2) {
                 townCount++;
             }
@@ -18,7 +18,7 @@ public class Exercise13 {
 
         // 3. Loop through statesOrTowns a second time and put all towns in the new array.
         int townIndex = 0;
-        for (int i = 0; i < statesOrTowns.length; i++) {
+        for (int i = 0; i < statesOrTowns.length(); i++) {
             if (statesOrTowns[i].length() > 2) {
                 towns[townIndex] = statesOrTowns[i];
                 townIndex++;
@@ -27,7 +27,7 @@ public class Exercise13 {
 
         // 4. Print the town array.
         System.out.println("Towns:");
-        for (int i = 0; i < towns.length; i++) {
+        for (int i = 0; i < towns.length(); i++) {
             System.out.println(towns[i]);
         }
     }
