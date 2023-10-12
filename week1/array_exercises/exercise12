@@ -9,7 +9,7 @@ public class Exercise12 {
         int posCount = 0;
         int negCount = 0;
 
-        for (int i = 0; i < values.length(); i++) {
+        for (int i = 0; i < values.length; i++) {
             if (values[i] > 0) {
               posCount++;
             } else {
@@ -27,7 +27,7 @@ public class Exercise12 {
         int posIndex = 0;
         int negIndex = 0;
 
-        for (int i = 0; i < values.length(); i++) {
+        for (int i = 0; i < values.length; i++) {
             if (values[i] > 0) {
               posIntArray[posIndex] = values[i];
               posIndex++;
@@ -37,10 +37,10 @@ public class Exercise12 {
             }
         }
         // 4. Confirm that your secondary arrays are properly populated either by debugging or printing their elements.
-        for (int i = 0; i < posIntArray.length(); i++) {
+        for (int i = 0; i < posIntArray.length; i++) {
             System.out.println("Positive array:" + posIntArray[i]);
         }
-        for (int i = 0; i < negIntArray.length(); i++) {
+        for (int i = 0; i < negIntArray.length; i++) {
             System.out.println("Negative array:" + negIntArray[i]);
         }
     }
@@ -48,7 +48,7 @@ public class Exercise12 {
     public static int[] makeRandomArray() {
         Random random = new Random();
         int[] result = new int[random.nextInt(100) + 50];
-        for (int i = 0; i < result.length(); i++) {
+        for (int i = 0; i < result.length; i++) {
             result[i] = random.nextInt(1000) - 500;
         }
         return result;
